@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+/* Divs */
+
+div#hid{
+    display: none;
+}
+
+#exp{
+    width: 60%;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .09);
+}
+
+#exp button{
+    background-color: rgb(112, 190, 190);
+    color: #fff;
+    padding: 10px;
+    border: 1px solid lightgray;
+    width: 150px;
+    height: 40px;
+    box-shadow: 3px 3px  3px rgba(0, 0, 0, .07);
+    cursor: pointer;
+}
+
+#exp button:hover{
+    background-color: rgb(86, 148, 148);
+}
+
+/* header */
+
+header{
+    background-color: rgb(53, 53, 255);
+    margin: -20px -8px  20px -8px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+table{
+    background-color: rgb(48, 162, 255);
+    color: white;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .1);
+}
+
+.la{
+    font-size: 1.5em;
+}
+
+th.la{
+    font-size: 1.7em;
+}
+
+/* Inputs */
+
+input, select{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+td > input{
+    background-color: rgb(241, 241, 241);
+}
+
+td > input:focus{
+    background-color: #ffffff;
+}
+
+input#btn{
+    background-color: rgb(255, 71, 47);
+    padding: 20px;
+    color: white;
+    padding: 18px;
+    box-sizing: content-box;
+    font-size: 1.2em;
+    height: min-content;
+    width: 14%;
+    cursor: pointer;
+    margin-top: 0px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, .09);
+    transition: .3s;
+    border: 2px solid darkred;
+}
+
+input#btn:hover{
+    padding: 21px;
+    transition: .3s;
+}
+
+#canc{
+    margin: auto;
+}
+
+#canc, #env{
+    width: 120px;
+    height: 40px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(255, 69, 69);
+    color: white;
+}
+
+#canc:hover, #env:hover{
+    background-color: rgb(247, 109, 109);
+}
+

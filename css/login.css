@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+
+:root{
+    --CorTitulo: #3b79ff;
+    --CorSubtitulo: #42b3ff;
+    --DentroInput: #f1f1f1;
+    --DentroInputFocus: #ffffff;
+    --CorBotao: #ff472f;
+    --LetraBotao: #ffffff;
+    --BordaBotao: #8b0000;
+    --CorTabela: #30a2ff;
+}
+
+header{
+    background-color: transparent;
+}
+
+header > h1{
+    color: var(--CorTitulo);
+}
+
+header > h2{
+    color: var(--CorSubtitulo);
+}
+
+main table{
+    background-color: var(--CorTabela);
+    color: white;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .1);
+}
+
+main table .esquerda{
+    font-size: 1.5em;
+}
+
+main table th.esquerda{
+    font-size: 1.7em;
+}
+
+main table input, main select{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+main table td > input{
+    background-color: var(--DentroInput);
+}
+
+main table td > input:focus{
+    background-color: var(--DentroInputFocus);
+}
+
+main input#btn{
+    background-color: var(--CorBotao);
+    color: var(--LetraBotao);
+    padding: 18px;
+    margin-top: 0px;
+    height: min-content;
+    width: 70px;
+    box-sizing: content-box;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, .09);
+    transition: .3s;
+    border: 2px solid var(--BordaBotao);
+    border-radius: 8px;
+}
+
+main input#btn:hover{
+    padding: 21px;
+    transition: .3s;
+}
+
+main section{
+    margin-top: 20px;
+}
