@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../js/script.js"></script>
     <link rel="shortcut icon" href="../fav/fav_cde.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/boletim.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -14,16 +13,7 @@
     <header>
         <h1>CDE-Centro do Estudante</h1>
                 <h2>Boletim Escolar</h2>
-            <nav>
-                <ul>
-                    <li class="link"><a href="../html/mc.html" target="_self">Minha conta</a></li>
-                    <li class="link"><a href="../index.html">Sair</a></li>
-                    <li>
-                        <img src="../img/sem_perfil_p.png" alt="Pequena foto de perfil padrão" id="img">
-                    </li>
-                </ul>
-            </nav>
-        <button onclick="voltar()" id="vol">&larr;</button>
+        <button onclick="window.location.replace('pp.php')" id="vol">&larr;</button>
     </header>
     <main>
         <table style="text-align: center;">

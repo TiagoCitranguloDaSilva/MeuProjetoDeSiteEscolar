@@ -6,23 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mensagem Enviada</title>
     <link rel="shortcut icon" href="../fav/fav_cde.png" type="image/x-icon">
-    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contato.css">
 </head>
 <body>
-    <button onclick="voltar()" id="vol">&larr;</button>
-
     <header>
+        <button onclick="window.location.replace('contato.php')" id="vol">&larr;</button>
         <h1>CDE-Centro do Estudante</h1>
             <h2>Entrar em Contato</h2>
-        <nav>
-            <ul>
-                <li class="link"><a href="../html/mc.html" target="_self">Minha conta</a></li>
-                <li class="link"><a href="../index.html">Sair</a></li>
-                <li>
-                    <img src="../img/sem_perfil_p.png" alt="Pequena foto de perfil padrão" id="img">
-                </li>
-            </ul>
-        </nav>
     </header>
     <section>
         <p>A sua mensagem foi enviada com sucesso</p>

@@ -17,16 +17,15 @@
                 $a = 0;
             }
         }
-        print_r($_COOKIE);
         teste('nome');
         teste('sobre');
         teste('ra');
         teste('sala');
         teste('em');
 
-        // if($a == 1){
-        //     header('Location: php/index.php');
-        // }
+        if($a == 1){
+            header('Location: php/pp.php');
+        }
 
     ?>
 </head>

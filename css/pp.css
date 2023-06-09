@@ -111,9 +111,4 @@ aside ul li{
     max-width: min-content;
 }
 
-button{
-    border: none;
-    background-color: transparent;
-    color: white;
-    cursor: pointer;
-}
+

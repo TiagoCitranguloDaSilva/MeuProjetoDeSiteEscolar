@@ -5,25 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../fav/fav_cde.png" type="image/x-icon">
-    <script src="../js/script.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/contato.css">
     <title>Contato</title>
 </head>
-<body >
+<body>
+    <?php
+
+        function mostrar($id){
+            if(isset($_COOKIE[$id])){
+                return $_COOKIE[$id];
+            }else{
+                echo "<script>window.location.replace('../');</script>";
+            }
+        }
+
+    ?>
     <header>
-        <button onclick="voltar()" id="vol">&larr;</button>
+        <button onclick="window.location.replace('pp.php')" id="vol">&larr;</button>
         <h1>CDE-Centro do Estudante</h1>
             <h2>Entrar em Contato</h2>
-        <nav>
-            <ul>
-                <li class="link"><a href="mc.html" target="_self">Minha conta</a></li>
-                <li class="link"><a href="../index.html">Sair</a></li>
-                <li>
-                    <img src="../img/sem_perfil_p.png" alt="Pequena foto de perfil padrão" id="img">
-                </li>
-            </ul>
-        </nav>
     </header>
     <section>
         <div>
@@ -32,17 +33,16 @@
                 <fieldset>
                     <table>
                     <?php
-                        $a = file('../arquivos/dados.txt');                    
                         echo "<tr>
                             <td class='la'><label for='nome'>Digite seu nome: </label></td>
-                            <td><input type='text' name='nome' id='nome' required placeholder='Primeiro nome...' maxlength='20' value='$a[0]'></td>
+                            <td><input type='text' name='nome' id='nome' required placeholder='Primeiro nome...' maxlength='20' value='".mostrar('nome')."'></td>
                         </tr>
                         <tr>
                             <td class='la'>
                                 <label for='sob'>Sobrenome: </label>
                             </td>
                             <td>
-                                <input type='text' name='sob' id ='sob' placeholder='Segundo nome...' maxlength='100' required value='$a[1]'>
+                                <input type='text' name='sob' id ='sob' placeholder='Segundo nome...' maxlength='100' required value='".mostrar('sobre')."'>
                             </td>
                         </tr>
                         <tr>
@@ -50,7 +50,7 @@
                                 <label for='em'>Email para contato: </label>
                             </td>
                             <td>
-                                <input type='email' name='em' id='em' required placeholder='Email para contato...' maxlength='100' value='$a[5]'>
+                                <input type='email' name='em' id='em' required placeholder='Email para contato...' maxlength='100' value='".mostrar('em')."'>
                             </td>
                         </tr>";
                         ?>

@@ -12,9 +12,6 @@ function div(){
     }
 }
 
-function voltar(){
-    window.history.back();
-}
 
 function aviso(){
     window.document.alert("Mensagem Enviada!");

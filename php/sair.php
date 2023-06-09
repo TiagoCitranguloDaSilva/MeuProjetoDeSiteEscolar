@@ -2,11 +2,8 @@
 
     function cookie($nome){
         if(isset($_COOKIE[$nome])){
-            print_r($_COOKIE[$nome]);
-            echo "<br>";
-            setcookie($nome, '', -1000000000);
-            print_r($_COOKIE[$nome]);
-            echo "<br>";
+            setcookie($nome, '', time()-1000000000, '/');
+            unset($_COOKIE[$nome]);
         }
     }
 
@@ -15,7 +12,7 @@
     cookie('ra');
     cookie('sala');
     cookie('em');
-    //var_dump($_COOKIE);
-    //header('location: ../');
+    header('location: ../');
+    
 
 ?>

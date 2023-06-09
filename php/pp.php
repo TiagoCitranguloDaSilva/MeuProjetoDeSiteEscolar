@@ -11,7 +11,6 @@
 </head>
 <body>
     <?php
-
         function mostrar($frase, $id){
             if(isset($_COOKIE[$id])){
                 if($id == 'em'){
@@ -20,12 +19,9 @@
                     return "$frase: $_COOKIE[$id]";
                 }
             }else{
-                echo "<script>window.alert('Ocorreu um erro'); window.location.replace('../');</script>";
+                echo "<script>window.location.replace('../');</script>";
             }
         }
-
-        print_r($_COOKIE);
-
     ?>
     <header>
         <!--<img src="../img/logo.png" alt="Um grande C azul usado como logo" id="logo">-->
@@ -59,7 +55,6 @@
                     <div id="info">
                         <ul>
                             <?php
-                                $a = file('../arquivos/dados.txt');
                                 echo "<li>". mostrar('Nome', 'nome') ."</li>";
                                 echo "<li>". mostrar('Sobrenome', 'sobre') ."</li>";
                                 echo "<li>" . mostrar('RA', 'ra') . "</li>";
