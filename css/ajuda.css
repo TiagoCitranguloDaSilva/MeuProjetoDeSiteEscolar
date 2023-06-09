@@ -1,44 +1,17 @@
 @charset "UTF-8";
 
- /* nav */
-
- nav ul{
-    list-style: none;
-    position: absolute;
-    top: -6px;
-    left: 69.1%;  
-}
-
-nav ul li{
-    display: inline-block;
-    margin-right: 10px;
-}
-
-nav ul li img#img{
-    position: absolute;
-    top: -6px;
-    left: calc(90% + 5px);    
-}
-
-/* header */
-
-header{
-    background-color: rgb(53, 53, 255);
-    margin: -10px -8px  20px -8px;
-    padding-bottom: 15px;
-}
 
 /* Section */
 
 section{
     max-width: 1000px;
-    width: 70%;
-    margin: auto;
+    width: 90%;
+    margin: 30px auto;
     background-color: white;
     border: 1px solid lightgray;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .07);
     border-radius: 10px;
-}
+} 
 
 /* Divs */
 
@@ -50,7 +23,7 @@ div{
     border-radius: 15px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .06);
     padding: 30px;
-}
+} 
 
 /* Videos */
 
@@ -59,13 +32,16 @@ video{
     margin: 10px;
     background-color: gray;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, .08);
-}
-
-
-
+} 
 
 /* p */
 
 .credito{
     font-size: .8em;
+} 
+
+/* Titulo */
+
+h3{
+    margin-top: 20px;
 }

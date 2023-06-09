@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="../css/aula.css">
     <title>Aulas</title>
 </head>
-<body>
-    <button onclick="voltar()" id="vol">&larr;</button>
-
+<body> 
     <header>
+        <button onclick="voltar()" id="vol">&larr;</button>
         <h1>CDE-Centro do Estudante</h1>
             <h2>Grade de Aulas</h2>
         <nav>
@@ -33,7 +32,7 @@
                 $unicas = ['Matemática', 'Matemática', 'Português', 'Português'];
                 $extra = 'Extra';
                 $dias = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta'];
-                echo "<tr>";
+                echo "<thead>";
                 for ($c = 0; $c < 8; $c++){
                     if($c == 0){
                         $a = "Dia";
@@ -42,10 +41,10 @@
                     }
                     echo "<th>$a</th>";
                 }
-                echo "</tr>";
+                echo "</thead>";
                 $n = rand(0, 4);
                 for ($e = 0; $e < 5; $e++){
-                    echo "<tr>";
+                    echo "<tbody>";
                     $numale = rand(1,7);
                     $numale = ($numale % 2 == 1) ? $numale : ++$numale;
                     $z = 0;
@@ -87,7 +86,7 @@
                             }
                         }
                     }
-                    echo "</tr>";
+                    echo "</tbody>";
                 }
             ?>
         </table>

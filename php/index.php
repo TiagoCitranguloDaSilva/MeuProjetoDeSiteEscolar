@@ -10,24 +10,31 @@
     <title>Home</title>
 </head>
 <body>
+    <?php
+
+        function mostrar($frase, $id){
+            if(isset($_COOKIE[$id])){
+                if($id == 'em'){
+                    return "$frase: <a href='mailto: $_COOKIE[$id]'>$_COOKIE[$id]</a>";
+                }else{
+                    return "$frase: $_COOKIE[$id]";
+                }
+            }else{
+                echo "<script>window.alert('Ocorreu um erro'); window.location.replace('../');</script>";
+            }
+        }
+
+        print_r($_COOKIE);
+
+    ?>
     <header>
         <!--<img src="../img/logo.png" alt="Um grande C azul usado como logo" id="logo">-->
-        <?php
-            $nome = isset($_POST['nome']) ? $_POST['nome'] : "Não Fornecido";
-            $sobre = isset($_POST['sob']) ? $_POST['sob'] : "Não Fornecido";
-            $ra = isset($_POST['ra']) ? $_POST['ra'] : "Não Encontrado";
-            $sala = isset($_POST['class']) ? $_POST['class'] : "Não Fornecido";
-            $em = isset($_POST['email']) ? $_POST['email'] : "Não Fornecido";
-            $arq = fopen("../arquivos/dados.txt", 'w+');
-            fwrite($arq, "$nome\n$sobre\n$ra\nClodovaldo\n$sala\n$em");
-            fclose($arq);
-        ?>
         <h1>CDE-Centro do Estudante</h1>
             <h2>Página Principal</h2>
         <nav>
             <ul>
                 <li class="link"><a href="../html/mc.html" target="_self">Minha conta</a></li>
-                <li class="link"><a href="../index.html">Sair</a></li>
+                <li class="link"><button onclick="window.location.replace('sair.php')">Sair</button></li>
                 <li>
                     <img src="../img/sem_perfil_p.png" alt="Pequena foto de perfil padrão" id="img">
                 </li>
@@ -53,12 +60,12 @@
                         <ul>
                             <?php
                                 $a = file('../arquivos/dados.txt');
-                                echo "<li>Nome: $a[0]</li>";
-                                echo "<li>Sobrenome: $a[1]</li>";
-                                echo "<li>RA: $a[2]</li>";
-                                echo "<li>Escola: $a[3]</li>";
-                                echo "<li>Sala: $a[4]</li>";
-                                echo "<li>Email de contato: <a href='mailto: $a[5]'>$a[5]</a></li>";
+                                echo "<li>". mostrar('Nome', 'nome') ."</li>";
+                                echo "<li>". mostrar('Sobrenome', 'sobre') ."</li>";
+                                echo "<li>" . mostrar('RA', 'ra') . "</li>";
+                                echo "<li>Escola: Clodovaldo</li>";
+                                echo "<li>" . mostrar('Sala', 'sala') . "</li>";
+                                echo "<li>" . mostrar('Email de contato', 'em') . "</li>";
                             ?>
                         </ul>
                     </div>

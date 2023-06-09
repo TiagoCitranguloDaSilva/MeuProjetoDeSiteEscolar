@@ -1,51 +1,21 @@
-body{
-    background-color: rgb(240, 240, 240);
+@charset "UTF-8";
+
+/* Corpo */
+
+section{
     text-align: justify;
 }
 
-
 /* titulos */
 
-h1{
-    margin-top: -22px;
-    padding-top: 45px;
-}
-
-h2#dif{
+section h2#dif{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
 
-h1, h2, h3{
+section h2, section h3{
     text-align: center;
-}
-
-/* nav */
-
-nav ul{
-    list-style: none;
-    position: absolute;
-    top: 0px;
-    left: 65.5%;  
-}
-
-nav ul li{
-    display: inline-block;
-    margin-right: 10px;
-}
-
-nav ul li img#img{
-    position: absolute;
-    top: -12px;
-    left: calc(90% + 5px);    
-}
-
-/* header */
-
-header{
-    background-color: rgb(53, 53, 255);
-    margin: 0px -8px  20px -8px;
-    padding-bottom: 15px;
+    margin: 40px auto;
 }
 
 /* lista */
@@ -86,42 +56,36 @@ p#credito{
 p#ad{
     font-size: .8em;
     text-align: center;
-
 }
 
 /* Iframe */
 
 iframe{
-    max-width: 80%;
+    width: 50%;
+    height: auto;
+    max-width: 500px;
 }
 
 #I{
     text-align: center;
-    margin-top: 40px;
-}
+    margin: 40px auto;
+} 
 
-/* section */
-
+/* section */ 
 section{
     width: 70%;
-    margin: auto;
+    margin: 0px auto;
     background-color: white;
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .08);
-}
+} 
 
 /* hr */
 
 hr{
     border-top: 1px solid rgb(253, 253, 253);
     margin: 50px 20px;
-}
-
-/* footer */
-
-footer{
-    text-align: center;
 }
 
 /* div com o audio */

@@ -15,6 +15,10 @@ h2.divisao{
     margin-bottom: 20px;
 }
 
+section h2{
+    margin-top: 20px;
+}
+
 div#dados{
     background-color: var(--CorFundo);
     width: 62%;
@@ -41,7 +45,6 @@ div#resto{
 
 div#resto ul{
     margin-top: 20px;
-    float: right;
 }
 
 div#info{
@@ -82,7 +85,7 @@ aside{
     margin: 20px 10px;
 }
 
-aside#border{
+aside#border, div#dados{
     border-radius: 10px;
     border: 1px solid rgb(218, 218, 218);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
@@ -108,4 +111,9 @@ aside ul li{
     max-width: min-content;
 }
 
-
+button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}

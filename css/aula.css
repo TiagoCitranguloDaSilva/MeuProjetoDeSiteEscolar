@@ -1,44 +1,9 @@
 @charset "UTF-8";
 
-/* Nav */
-
-
-
-header{
-    background-color: rgb(53, 53, 255);
-    margin: -10px -15px  20px -8px;
-    padding-bottom: 15px;
-    width: 100%;
-}
-
-/* nav */
-
-nav a{
-    color: white;
-}
-
-nav ul{
-    list-style: none;
-    position: absolute;
-    top: -6px;
-    left: 69.1%;  
-}
-
-nav ul li{
-    display: inline-block;
-    margin-right: 10px;
-}
-
-nav ul li img#img{
-    position: absolute;
-    top: -6px;
-    left: calc(90% + 5px);    
-}
-
 /* tabela */
 
-table{
-    margin: auto;
+ table{
+    margin: 30px auto;
     background-color: gray;
 }
 
