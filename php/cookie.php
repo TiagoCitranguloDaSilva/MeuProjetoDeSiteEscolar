@@ -16,6 +16,12 @@ cookie('ra', $_POST['ra'], 'ra');
 cookie('sala', $_POST['class'], 'class');
 cookie('em', $_POST['email'], 'email');
 
+if(isset($_FILES['foto'])){
+    $ext = substr($_FILES['foto']['name'], -4);
+    $nome = 'FotoUsuario' . $ext;
+    move_uploaded_file($_FILES['foto']['tmp_name'], '../img/' . $nome);
+}
+
 header('location: teste.php');
 
 ?>

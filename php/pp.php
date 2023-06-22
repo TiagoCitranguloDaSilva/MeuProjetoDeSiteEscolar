@@ -32,7 +32,15 @@
                 <li class="link"><a href="../html/mc.html" target="_self">Minha conta</a></li>
                 <li class="link"><button onclick="window.location.replace('sair.php')">Sair</button></li>
                 <li>
-                    <img src="../img/sem_perfil_p.png" alt="Pequena foto de perfil padrão" id="img">
+                    <?php
+
+                            if(file_exists('../img/FotoUsuario.jpg')){
+                                echo "<img src='../img/FotoUsuario.jpg' alt='Pequena foto do Usuario' width='40px' height='40px' id='img'>";
+                            }else{
+                                echo "<img src='../img/sem_perfil_p.png' alt='Pequena foto de perfil padrão' width='40px' height='40px' id='img'>";
+                            }
+
+                        ?>
                 </li>
             </ul>
         </nav>
@@ -54,7 +62,17 @@
                     <h2 class="divisao">Minha ficha</h2>
                 </div>
                 <div id="cont">
-                    <div id="foto"><img src="../img/sem_perfil_m.jpg" alt="Grande foto de perfil padrão"></div>
+                    <div id="foto">
+                        <?php
+
+                            if(file_exists('../img/FotoUsuario.jpg')){
+                                echo "<img src='../img/FotoUsuario.jpg' alt='Foto do Usuario' width='170px' height='249px'>";
+                            }else{
+                                echo "<img src='../img/sem_perfil_m.jpg' alt='Grande foto de perfil padrão' width='170px' height='249px'>";
+                            }
+
+                        ?>
+                    </div>
                     <div id="info">
                         <ul>
                             <?php

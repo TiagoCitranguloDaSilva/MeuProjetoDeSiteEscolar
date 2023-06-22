@@ -39,6 +39,8 @@ div#dados img{
     float: left; */
     margin-left: 10%;
     margin-bottom: 20px;
+    width: 170px;
+    height: 249px;
 }
 
 div#foto{

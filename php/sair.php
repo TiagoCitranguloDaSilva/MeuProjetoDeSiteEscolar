@@ -12,6 +12,9 @@
     cookie('ra');
     cookie('sala');
     cookie('em');
+    if(file_exists('../img/FotoUsuario.jpg')){
+        unlink('../img/FotoUsuario.jpg');
+    }
     header('location: ../');
     
 
