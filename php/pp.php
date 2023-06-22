@@ -14,7 +14,7 @@
         function mostrar($frase, $id){
             if(isset($_COOKIE[$id])){
                 if($id == 'em'){
-                    return "$frase: <a href='mailto: $_COOKIE[$id]'>$_COOKIE[$id]</a>";
+                    return "<a href='mailto: $_COOKIE[$id]'>$_COOKIE[$id]</a>";
                 }else{
                     return "$frase: $_COOKIE[$id]";
                 }
@@ -50,7 +50,10 @@
                 </ul>
             </aside>
             <div id="dados">
-                <h2 class="divisao">Minha ficha</h2>
+                <div id="header">
+                    <h2 class="divisao">Minha ficha</h2>
+                </div>
+                <div id="cont">
                     <div id="foto"><img src="../img/sem_perfil_m.jpg" alt="Grande foto de perfil padrão"></div>
                     <div id="info">
                         <ul>
@@ -60,18 +63,21 @@
                                 echo "<li>" . mostrar('RA', 'ra') . "</li>";
                                 echo "<li>Escola: Clodovaldo</li>";
                                 echo "<li>" . mostrar('Sala', 'sala') . "</li>";
-                                echo "<li>" . mostrar('Email de contato', 'em') . "</li>";
                             ?>
                         </ul>
                     </div>
+                </div>
+                <div id="rodape">
                     <div id="resto">
                         <hr>
                         <ul>
-                            <li>Telefones para contato: </li>
+                            <li>Contato: </li>
+                            <?php echo "<li>" . mostrar('', 'em') . "</li>"; ?>
                             <li><a href="tel:+55 19 3899<?php echo rand(100, 9999)?>">(19)3899-<?php echo rand(100, 9999)?></a></li>
                             <li><a href="tel:+55 19 9<?php echo rand(1000, 9999) . rand(100, 9999);?>">(19)9<?php echo rand(1000, 9999) . "-" . rand(100, 9999);?></a><p id="alert">*Os números mostrados acima são meramente ilustrativos!</p></li>
                         </ul>
                     </div>
+                </div>
                 </div>
         </section>
     </main>

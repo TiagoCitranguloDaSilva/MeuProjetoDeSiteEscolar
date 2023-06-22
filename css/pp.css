@@ -21,41 +21,53 @@ section h2{
 
 div#dados{
     background-color: var(--CorFundo);
-    width: 62%;
-    float: right;
+    width: 50%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
     margin: 20px 10px;
 }
 
+div#cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 div#dados img{
-    display: block;
-    float: left;
+    /* display: block;
+    float: left; */
     margin-left: 10%;
     margin-bottom: 20px;
 }
 
 div#foto{
     min-width: 200px;
-    margin: auto;
-    display: inline-block;
+    /* margin: auto;
+    display: inline-block; */
 }
-
+/* 
 div#resto{
     clear: both;
-}
+} */
 
 div#resto ul{
     margin-top: 20px;
 }
 
 div#info{
-    display: inline-block;
-    margin: 0px auto 20px auto;;
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
     min-width: 200px;
 }
 
 section{
-    max-width: 1000px;
     margin: auto;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
 }
 
 section ul{
@@ -81,7 +93,8 @@ hr{
 aside{
     background-color: white;
     width: 32%;
-    float: left;
+    height: min-content;
+    min-width: 300px;
     margin: 20px 10px;
 }
 
