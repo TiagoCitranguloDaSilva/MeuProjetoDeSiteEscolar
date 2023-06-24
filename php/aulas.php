@@ -30,7 +30,7 @@
                     }else{
                         $a = $c."ªaula";
                     }
-                    echo "<th>$a</th>";
+                    echo "<th scope='column'>$a</th>";
                 }
                 echo "</tr>";
                 echo "</thead>";

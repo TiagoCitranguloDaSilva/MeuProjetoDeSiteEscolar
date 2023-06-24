@@ -10,14 +10,20 @@ table{
 main table th, td{
     border: 1px solid black;
     padding: 10px;
-    background-color: rgb(238, 238, 238);
+    background-color: #eeeeee;
 }
 
 ul{
     margin: auto;
 }
 
-/*
+caption{
+    background-color: #eeeeee;
+    border: 3px solid gray;
+    border-bottom: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
 
 

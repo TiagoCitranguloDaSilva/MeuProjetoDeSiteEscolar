@@ -17,27 +17,25 @@
     </header>
     <main>
         <table style="text-align: center;">
+            <caption>Boletim Escolar</caption>
             <thead>
                 <tr>
-                    <th colspan="6">Boletim Escolar</th>
-                </tr>
-                <tr>
-                    <th>
+                    <th scope='column'>
                         Matérias
                     </th>
-                    <th>
+                    <th scope='column'>
                         1ºBim
                     </th>
-                    <th>
+                    <th scope='column'>
                         2ºBim
                     </th>
-                    <th>
+                    <th scope='column'>
                         3ºBim
                     </th>
-                    <th>
+                    <th scope='column'>
                         4ºBim
                     </th>
-                    <th>
+                    <th scope='column'>
                         MF
                     </th>
                 </tr>
@@ -70,7 +68,7 @@
                         }else{
                             $sit = "Aprovado";
                         }
-                        echo "<tfoot><tr><td colspan='5'>Situação final</td><td>$sit</td></tr></tfoot>"
+                        echo "<tfoot><tr><td colspan='5' scope='row'>Situação final</td><td>$sit</td></tr></tfoot>"
                        ?>
             </tbody>
         </table>
