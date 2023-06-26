@@ -20,22 +20,22 @@
             <caption>Boletim Escolar</caption>
             <thead>
                 <tr>
-                    <th scope='column'>
+                    <th scope='col'>
                         Matérias
                     </th>
-                    <th scope='column'>
+                    <th scope='col'>
                         1ºBim
                     </th>
-                    <th scope='column'>
+                    <th scope='col'>
                         2ºBim
                     </th>
-                    <th scope='column'>
+                    <th scope='col'>
                         3ºBim
                     </th>
-                    <th scope='column'>
+                    <th scope='col'>
                         4ºBim
                     </th>
-                    <th scope='column'>
+                    <th scope='col'>
                         MF
                     </th>
                 </tr>
@@ -68,9 +68,8 @@
                         }else{
                             $sit = "Aprovado";
                         }
-                        echo "<tfoot><tr><td colspan='5' scope='row'>Situação final</td><td>$sit</td></tr></tfoot>"
-                       ?>
-            </tbody>
+                        echo "</tbody><tfoot><tr><td colspan='5' scope='row'>Situação final</td><td>$sit</td></tr></tfoot>"
+                       ?>  
         </table>
     </main>
     <footer>

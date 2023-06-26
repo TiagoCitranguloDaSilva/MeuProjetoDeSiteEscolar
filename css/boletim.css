@@ -7,18 +7,31 @@ table{
     margin: 25px auto 25px auto;
 }
 
-main table th, td{
+main table th, tfoot{
     border: 1px solid black;
     padding: 10px;
-    background-color: #eeeeee;
+    background-color: rgb(196, 196, 196);
+}
+
+main table td{
+    border: 1px solid black;
+    padding: 10px;
 }
 
 ul{
     margin: auto;
 }
 
-caption{
+tbody tr:nth-child(2n){
+    background-color: lightgray;
+}
+
+tbody tr:nth-child(2n-1){
     background-color: #eeeeee;
+}
+
+caption{
+    background-color: rgb(185, 185, 185);
     border: 3px solid gray;
     border-bottom: none;
     font-size: 1.5em;
