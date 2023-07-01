@@ -79,7 +79,7 @@
                                 echo "<li>". mostrar('Nome', 'nome') ."</li>";
                                 echo "<li>". mostrar('Sobrenome', 'sobre') ."</li>";
                                 echo "<li>" . mostrar('RA', 'ra') . "</li>";
-                                echo "<li>Escola: Clodovaldo</li>";
+                                echo "<li>Escola: Albertinado</li>";
                                 echo "<li>" . mostrar('Sala', 'sala') . "</li>";
                             ?>
                         </ul>
